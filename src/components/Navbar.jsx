@@ -46,7 +46,6 @@ const NavContainer = styled.nav`
 		img {
 			width: 110px;
 			height: 49px;
-			// background: green;
 		}
 		${InputBtn} {
 			width: 100%;

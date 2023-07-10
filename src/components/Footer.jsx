@@ -43,14 +43,13 @@ const MainContainer = styled.footer`
 		gap: 10px;
 		margin: 0;
 		${Column}{
-			background: pink;
 			width: 100%;
 			margin: 0;
 			li {
 				line-height: 21px;
 				&:hover {
+					color: #DBD1C6;
 					text-decoration: underline;
-					color: #f5f5f5;
 				}
 			}
 			li+li {
@@ -63,11 +62,10 @@ const MainContainer = styled.footer`
 			}
 		}
 	}
-	${AccordionTest}{
-		background: green;
-	}
+	${AccordionTest}
 	${MyIcon}{
-		${SocialMedia}
+		${SocialMedia}{
+
 		}
 	}
 	@media screen and (max-width: 959.9px) {
