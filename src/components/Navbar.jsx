@@ -37,6 +37,7 @@ const NavContainer = styled.nav`
 	border-top: 1px solid #CBCBCB;
 	border-bottom: 1px solid #CBCBCB;
 	width: 100%;
+  margin: 10px;
 	height: 80px;
 	gap: 5px;
 	position: relative;

@@ -4,7 +4,7 @@ import {	useQuery } from '@tanstack/react-query';
 
 const Main = styled.main`
 	max-width: 1208px;
-	margin: 0 auto;
+	margin: 10px auto;
 	padding: 10px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
