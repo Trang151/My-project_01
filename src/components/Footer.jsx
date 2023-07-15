@@ -81,7 +81,7 @@ const MainContainer = styled.footer`
 		}
 `
 const Footer = () => {
-  return (
+	return (
 		<MainContainer>
 			<Content>
 				<Column>
@@ -132,14 +132,14 @@ const Footer = () => {
 			<AccordionTest />
 			<MyIcon>
 				<SocialMedia>
-					<Icon icon="mdi:twitter" width="32px"/>
-					<Icon icon="ic:baseline-facebook" width="32px"/>
+					<Icon icon="mdi:twitter" width="32px" />
+					<Icon icon="ic:baseline-facebook" width="32px" />
 				</SocialMedia>
 				<span>© Mercari, Inc.</span>
-			</MyIcon> 
-			
+			</MyIcon>
+
 		</MainContainer>
-  )
+	)
 }
 
 export default Footer

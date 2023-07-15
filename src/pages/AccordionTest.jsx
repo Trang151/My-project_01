@@ -46,12 +46,12 @@ const StyledAccordion = styled(Accordion)`
   }
 `
 const AccordionTest = () => {
-	return (
+  return (
     <StyledAccordion allowMultipleExpanded>
       <StyledAccordionItem>
         <StyledAccordionItemButton>
           <span>メルカリについて</span>
-          <div><Icon icon="icon-park:drop-down-list" width='25px'/></div> 
+          <div><Icon icon="icon-park:drop-down-list" width='25px' /></div>
         </StyledAccordionItemButton>
         <StyledAccordionItemPanel>
           <ul>
@@ -70,37 +70,37 @@ const AccordionTest = () => {
       <StyledAccordionItem>
         <StyledAccordionItemButton>
           <span>ヘルプ</span>
-          <div><Icon icon="icon-park:drop-down-list" width='25px'/></div> 
+          <div><Icon icon="icon-park:drop-down-list" width='25px' /></div>
         </StyledAccordionItemButton>
         <StyledAccordionItemPanel>
-            <li><a href="">ヘルプセンター（ガイド・お問い合わせ）</a></li>
-            <li><a href="">メルカリSholis出品者向けガイド</a></li>
-            <li><a href="">お問い合わせ一覧</a></li>
-            <li><a href="">フリーワードから商品をさがす</a></li>
+          <li><a href="">ヘルプセンター（ガイド・お問い合わせ）</a></li>
+          <li><a href="">メルカリSholis出品者向けガイド</a></li>
+          <li><a href="">お問い合わせ一覧</a></li>
+          <li><a href="">フリーワードから商品をさがす</a></li>
         </StyledAccordionItemPanel>
       </StyledAccordionItem>
       <StyledAccordionItem>
         <StyledAccordionItemButton>
           <span>プライバシーと利用規約</span>
-          <div><Icon icon="icon-park:drop-down-list" width='25px'/></div> 
+          <div><Icon icon="icon-park:drop-down-list" width='25px' /></div>
         </StyledAccordionItemButton>
         <StyledAccordionItemPanel>
-            <li><a href="">プライバシーポリシー</a></li>
-            <li><a href="">外部送信ポリシー</a></li>
-            <li><a href="">メルカリ利用規約</a></li>
-            <li><a href="">メルカリSholis利用規約</a></li>
-            <li><a href="">メルペイ利用規約</a></li>
-            <li><a href="">メルカード利用規約</a></li>
-            <li><a href="">メルペイスマートマネー利用規約</a></li>
-            <li><a href="">メルペイスマートマネープライバシーポリシー</a></li>
-            <li><a href="">電磁交付規約</a></li>
-            <li><a href="">コンプライアンスポリシー</a></li>
-            <li><a href="">個人データの安全管理に係る基本方針</a></li>
-						<li><a href="">特定商取引に関する表記</a></li>
-            <li><a href="">資金決済法に基づく表示</a></li>
-						<li><a href="">法令順守と犯罪抑止のために</a></li>
-						<li><a href="">メルカリあんしん・あんぜん宣言！</a></li>
-						<li><a href="">偽ブランド品撲滅への取り組み</a></li>
+          <li><a href="">プライバシーポリシー</a></li>
+          <li><a href="">外部送信ポリシー</a></li>
+          <li><a href="">メルカリ利用規約</a></li>
+          <li><a href="">メルカリSholis利用規約</a></li>
+          <li><a href="">メルペイ利用規約</a></li>
+          <li><a href="">メルカード利用規約</a></li>
+          <li><a href="">メルペイスマートマネー利用規約</a></li>
+          <li><a href="">メルペイスマートマネープライバシーポリシー</a></li>
+          <li><a href="">電磁交付規約</a></li>
+          <li><a href="">コンプライアンスポリシー</a></li>
+          <li><a href="">個人データの安全管理に係る基本方針</a></li>
+          <li><a href="">特定商取引に関する表記</a></li>
+          <li><a href="">資金決済法に基づく表示</a></li>
+          <li><a href="">法令順守と犯罪抑止のために</a></li>
+          <li><a href="">メルカリあんしん・あんぜん宣言！</a></li>
+          <li><a href="">偽ブランド品撲滅への取り組み</a></li>
         </StyledAccordionItemPanel>
       </StyledAccordionItem>
     </StyledAccordion>

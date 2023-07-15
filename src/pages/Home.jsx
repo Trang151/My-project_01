@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components'
-import {	useQuery } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 
 const Main = styled.main`
 	max-width: 1208px;
@@ -19,7 +19,7 @@ const Main = styled.main`
 		grid-template-columns: 1fr 1fr;		
 	}
 `
-const BoxContainer =styled.div`
+const BoxContainer = styled.div`
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -72,21 +72,24 @@ const Home = () => {
 
 	if (error) return 'An error has occurred: '
 
-  return (
+	return (
 		<Main>
-			{data?.data && data.data.map((item,index) => {
-				return (
-					<>
-						<BoxContainer key={index}>
-							<img src={"https://lusty.asia:1443" + item.attributes.images.data[0].attributes.url} alt="" />
-							<span>¥{item.attributes.price}</span>
-							<p>{item.attributes.title}</p>
-						</BoxContainer>
-					</>
-				)
+			{data?.data && data.data.map((item, index) => {
+				console.log(item.attributes.images.data)
+				if (item.attributes.images.data) {
+					return (
+						<>
+							<BoxContainer key={index}>
+								<img src={"https://lusty.asia:1443" + item.attributes.images.data[0].attributes.url} alt="" />
+								<span>¥{item.attributes.price}</span>
+								<p>{item.attributes.title}</p>
+							</BoxContainer>
+						</>
+					)
+				}
 			})}
 		</Main>
-  )
+	)
 }
 
 export default Home

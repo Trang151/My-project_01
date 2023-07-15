@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { useState } from 'react';
 
 const Login = styled.main`
-    background: gray;
+    // background: red;
     h1 {
         // background: green;
         color: #333333;
@@ -37,8 +37,8 @@ const Mail = styled.div`
         // boder: 1px solid black;
         border-radius: 4px;
     }
-    
-    
+
+
 `
 const Password = styled.div`
     // background: yellow;
@@ -78,34 +78,37 @@ const LoginButton = styled.button`
 
 `
 const LoginForm = () => {
-   const [identifier, setIdentifier] = useState<string>('');
-   const [password, setPassword] = useState<string>('');
- 
-   const handleLogin = () => {
-      UserLogin(identifier, password, navigate, dispatch)
-   }
-        
+  // const [identifier, setIdentifier] = useState < string > ('');
+  // const [password, setPassword] = useState < string > ('');
+  // const [type, setType] = useState < boolean > (false);
+  // const dispatch = useDispatch();
+  // const navigate = useNavigate();
+  // const handleLogin = () => {
+  //     UserLogin(identifier, password, navigate, dispatch)
+  // }
+
+
   return (
     <Login>
-        <h1>ログイン</h1>
-        <Mail>
-            <p>メールまたは電話番号</p>
-            <input type='text' placeholder='' />
-        </Mail>
-        <Password>
-            <p>メールまたは電話番号</p>
-            <input type='text' placeholder='' />
-        </Password>
-        <span>
+      <h1>ログイン</h1>
+      <Mail>
+        <p>メールまたは電話番号</p>
+        <input type='text' placeholder='' />
+      </Mail>
+      <Password>
+        <p>メールまたは電話番号</p>
+        <input type='text' placeholder='' />
+      </Password>
+      <span>
         パスワードを忘れた方はこちら
-        </span>
-        <span>
+      </span>
+      <span>
         ログインできない方はこちら
-        </span>
-        <p>
+      </span>
+      <p>
         このサイトはreCAPTCHAで保護されており、Googleのプライバシーポリシーと利用規約が適用されます。
-        </p>
-        <LoginButton onClick={() => handleLogin()}>Login</LoginButton>
+      </p>
+      <LoginButton onClick={() => handleLogin()}>Login</LoginButton>
     </Login>
   )
 }

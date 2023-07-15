@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../assets/mercari.svg'
-import {Container} from '../GlobalStyles'
+import { Container } from '../GlobalStyles'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
@@ -192,36 +192,36 @@ const NavContainer = styled.nav`
 	}
 `
 const Navbar = () => {
-  return (
-	<NavContainer>
-		<LeftNav>
-			<Link to="/"><img src={logo} alt=""/></Link>
-			<InputBtn>
-          <input type="text"placeholder="なにをお探しですか？"></input>
-          <div className='iconSearch'>
-            <Icon icon="iconoir:search" color="black" width="18"/>
-          </div>
-      </InputBtn>
-		</LeftNav>
-		<RightNav>
-			<ul>
-				<li><a href="">お知らせ</a></li>
-				<li><Link to="/login">ログイン</Link></li>
-				<li><a href="">会員登録</a></li>
-				<li><a href="">出品</a></li>
-			</ul>
-      <div className='icon'>
-        <div className='iconSearch'>
-          <Icon icon="iconoir:search" color="black" width="22"/>
-        </div>
-        <div className='iconTick'>
-          <Icon icon="mdi:tick-outline" color="black" width="25" height="25" />			
-        </div>
-      </div>
-		</RightNav>
-	</NavContainer>
-	
-  )
+	return (
+		<NavContainer>
+			<LeftNav>
+				<Link to="/"><img src={logo} alt="" /></Link>
+				<InputBtn>
+					<input type="text" placeholder="なにをお探しですか？"></input>
+					<div className='iconSearch'>
+						<Icon icon="iconoir:search" color="black" width="18" />
+					</div>
+				</InputBtn>
+			</LeftNav>
+			<RightNav>
+				<ul>
+					<li><a href="/">お知らせ</a></li>
+					<li><Link to="/login">ログイン</Link></li>
+					<li><a href="">会員登録</a></li>
+					<li><a href="">出品</a></li>
+				</ul>
+				<div className='icon'>
+					<div className='iconSearch'>
+						<Icon icon="iconoir:search" color="black" width="22" />
+					</div>
+					<div className='iconTick'>
+						<Icon icon="mdi:tick-outline" color="black" width="25" height="25" />
+					</div>
+				</div>
+			</RightNav>
+		</NavContainer>
+
+	)
 }
 
 export default Navbar
