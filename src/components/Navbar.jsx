@@ -207,8 +207,8 @@ const Navbar = () => {
 				<ul>
 					<li><a href="/">お知らせ</a></li>
 					<li><Link to="/login">ログイン</Link></li>
-					<li><a href="">会員登録</a></li>
-					<li><a href="">出品</a></li>
+					<li><a href="/">会員登録</a></li>
+					<li><a href="/">出品</a></li>
 				</ul>
 				<div className='icon'>
 					<div className='iconSearch'>

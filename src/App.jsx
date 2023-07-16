@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import GlobalStyle, {Container, MainContainer} from './GlobalStyles'
+import GlobalStyle, { Container, MainContainer } from './GlobalStyles'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout'
 import Navbar from './components/Navbar'
@@ -10,7 +10,6 @@ import Info from './pages/Info'
 import Carousel from './pages/Carousel'
 import GridGallery from './pages/GridGallery'
 import LoginForm from './pages/LoginForm'
-// import AccordionMenu from './pages/AccordionMenu';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 const queryClient = new QueryClient()
@@ -29,13 +28,12 @@ function App() {
             <Route path="/carousel" element={<Carousel />} />
             <Route path="/grid-gallery" element={<GridGallery />} />
             <Route path="/login" element={<LoginForm />} />
-            {/* <Route path="/accordion" element={<AccordionMenu />} /> */}
             {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
           <Footer />
         </Router>
       </QueryClientProvider>
-    </>    
+    </>
   )
 }
 
